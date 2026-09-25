@@ -14,7 +14,7 @@ const services = [
     icon: HardHat, 
     short: "Foundations, structural works, and road developments built to last.",
     desc: "From initial site surveys to the final pour of concrete, our civil engineering team ensures the structural integrity of your project. We handle earthworks, deep foundations, high-rise structural frameworks, and municipal infrastructure.",
-    image: "https://images.unsplash.com/photo-1541888081622-15cb2a061414?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop"
   },
   { 
     id: "sanitation",

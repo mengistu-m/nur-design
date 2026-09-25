@@ -34,7 +34,7 @@ export default function Home() {
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1541888081622-15cb2a061414?q=80&w=2000&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2000&auto=format&fit=crop" 
             alt="Construction Site" 
             className="w-full h-full object-cover brightness-[0.3]"
           />
