@@ -28,7 +28,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-foreground">Our Story</h2>
               <p className="text-muted-foreground mb-4">
-                Founded over 15 years ago, Nur Design Built began with a simple mission: to raise the standard of construction and engineering consultancy. What started as a small team of civil engineers has grown into a multidisciplinary firm handling everything from complex infrastructure to bespoke interior designs.
+                Founded over 10 years ago, Nur Design Built began with a simple mission: to raise the standard of construction and engineering consultancy. What started as a small team of civil engineers has grown into a multidisciplinary firm handling everything from complex infrastructure to bespoke interior designs.
               </p>
               <p className="text-muted-foreground mb-8">
                 We believe that every project, regardless of scale, deserves rigorous attention to detail, uncompromising safety standards, and innovative problem-solving.
