@@ -142,7 +142,7 @@ export default function Home() {
             className="text-center max-w-3xl mx-auto mb-20"
           >
             <h2 className="text-4xl md:text-5xl font-light text-primary mb-6 tracking-tight">Our Core Services</h2>
-            <p className="text-lg md:text-xl text-muted-foreground font-light">Comprehensive engineering and design solutions tailored to your project's unique requirements.</p>
+            <p className="text-lg md:text-xl text-muted-foreground font-light">Comprehensive engineering and design solutions tailored to your project&apos;s unique requirements.</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, i) => (
@@ -209,26 +209,26 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-24 md:py-32 bg-primary text-primary-foreground overflow-hidden relative">
-        <div className="absolute top-1/2 left-0 w-full h-px bg-primary-foreground/10 -translate-y-1/2 pointer-events-none" />
+      <section id="testimonials" className="py-24 md:py-32 bg-background text-foreground overflow-hidden relative">
+        <div className="absolute top-1/2 left-0 w-full h-px bg-border -translate-y-1/2 pointer-events-none" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <span className="text-accent font-bold tracking-widest uppercase text-sm mb-4 block">Testimonials</span>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-20 tracking-tight">What Our Clients Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[1, 2, 3].map((_, i) => (
-              <div key={i} className="bg-secondary/50 border border-primary-foreground/10 rounded-2xl p-10 backdrop-blur-md text-left relative group hover:bg-secondary/80 transition-colors">
-                <Quote className="absolute top-8 right-8 h-10 w-10 text-primary-foreground/10 group-hover:text-accent/20 transition-colors" />
+              <div key={i} className="bg-muted/50 border border-border rounded-2xl p-10 backdrop-blur-md text-left relative group hover:bg-muted transition-colors">
+                <Quote className="absolute top-8 right-8 h-10 w-10 text-muted-foreground/20 group-hover:text-accent/20 transition-colors" />
                 <div className="flex items-center mb-8">
-                  <div className="h-14 w-14 rounded-full bg-accent flex items-center justify-center font-bold text-xl mr-5 shadow-lg shadow-accent/20">
+                  <div className="h-14 w-14 rounded-full bg-accent flex items-center justify-center font-bold text-xl mr-5 shadow-lg shadow-accent/20 text-white">
                     JD
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">John Doe</h4>
-                    <span className="text-sm text-primary-foreground/60 font-medium">Real Estate Developer</span>
+                    <span className="text-sm text-muted-foreground font-medium">Real Estate Developer</span>
                   </div>
                 </div>
-                <p className="text-primary-foreground/80 italic leading-relaxed text-lg font-light">
-                  "Nur Design Built delivered exceptional quality on our latest commercial project. Their attention to detail and ability to stay within budget was truly impressive. Highly recommended."
+                <p className="text-foreground/80 italic leading-relaxed text-lg font-light">
+                  &quot;Nur Design Built delivered exceptional quality on our latest commercial project. Their attention to detail and ability to stay within budget was truly impressive. Highly recommended.&quot;
                 </p>
               </div>
             ))}
@@ -237,18 +237,19 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-primary text-primary-foreground relative overflow-hidden">
+      <section className="py-32 bg-accent text-accent-foreground relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-10 grayscale" />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
-          <span className="inline-block py-1 px-4 border border-accent text-accent font-medium text-xs tracking-[0.2em] uppercase mb-6">
-            Let's Build
+          <span className="inline-block py-1 px-4 border border-accent-foreground/50 text-accent-foreground font-medium text-xs tracking-[0.2em] uppercase mb-6">
+            Let&apos;s Build
           </span>
-          <h2 className="text-4xl md:text-6xl font-light text-primary-foreground mb-6 tracking-tight">Ready to Start Your Next Project?</h2>
-          <p className="text-xl text-primary-foreground/60 max-w-2xl mx-auto mb-12 font-light tracking-wide leading-relaxed">
+          <h2 className="text-4xl md:text-6xl font-light text-accent-foreground mb-6 tracking-tight">Ready to Start Your Next Project?</h2>
+          <p className="text-xl text-accent-foreground/80 max-w-2xl mx-auto mb-12 font-light tracking-wide leading-relaxed">
             Contact us today for a free consultation. Our team of experts is ready to bring your vision to life.
           </p>
           <Link 
             href="/quote" 
-            className="group relative inline-flex h-16 items-center justify-center bg-white px-12 py-4 text-sm font-bold text-primary tracking-widest uppercase transition-all hover:bg-accent hover:text-white"
+            className="group relative inline-flex h-16 items-center justify-center bg-primary px-12 py-4 text-sm font-bold text-primary-foreground tracking-widest uppercase transition-all hover:bg-white hover:text-primary"
           >
             Request a Free Quote <ArrowRight className="ml-4 h-5 w-5 transition-transform group-hover:translate-x-2" />
           </Link>
