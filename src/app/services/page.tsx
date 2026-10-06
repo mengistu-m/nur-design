@@ -39,8 +39,11 @@ const services = [
     short: "Functional and aesthetically pleasing interior spaces.",
     desc: "We don't just build shells; we create environments. Our interior design team selects materials, fixtures, and layouts that elevate the user experience, from luxury residential to corporate office spaces.",
     images: [
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop"
+      "/images/interior_1.jpg",
+      "/images/interior_2.jpg",
+      "/images/interior_3.jpg",
+      "/images/interior_4.jpg",
+      "/images/interior_5.jpg"
     ]
   },
 ]
