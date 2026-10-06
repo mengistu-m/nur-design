@@ -16,8 +16,8 @@ const services = [
     short: "Foundations, structural works, and road developments built to last.",
     desc: "From initial site surveys to the final pour of concrete, our civil engineering team ensures the structural integrity of your project. We handle earthworks, deep foundations, high-rise structural frameworks, and municipal infrastructure.",
     images: [
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1541888081622-15cb2a061414?q=80&w=800&auto=format&fit=crop"
+      "/images/civil_1.jpg",
+      "/images/civil_2.jpg"
     ]
   },
   { 
@@ -29,7 +29,8 @@ const services = [
     images: [
       "/images/custom_arch_1.png",
       "/images/custom_arch_2.jpg",
-      "/images/custom_arch_3.jpg"
+      "/images/custom_arch_3.jpg",
+      "/images/custom_arch_4.jpg"
     ]
   },
   { 

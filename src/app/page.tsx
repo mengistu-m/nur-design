@@ -45,25 +45,19 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Architectural Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <AnimatePresence mode="wait">
-          <motion.div 
-            key={currentImageIndex}
-            className="absolute inset-0 z-0"
-            initial={{ scale: 1.05, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
-          >
-            <img 
-              src={heroImages[currentImageIndex]} 
-              alt="Modern Architecture" 
-              className="w-full h-full object-cover brightness-[0.4]"
-            />
-          </motion.div>
-        </AnimatePresence>
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/50 via-transparent to-primary/80 z-0 pointer-events-none" />
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white flex flex-col items-center">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
+        {heroImages.map((img, idx) => (
+          <img 
+            key={idx}
+            src={img} 
+            alt="Modern Architecture" 
+            className={`absolute inset-0 w-full h-full object-cover brightness-[0.4] transition-opacity duration-1000 ease-in-out ${
+              idx === currentImageIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+            }`}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/50 via-transparent to-primary/80 z-20 pointer-events-none" />
+        <div className="relative z-30 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white flex flex-col items-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
