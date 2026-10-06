@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { MapPin, Calendar } from "lucide-react"
 
 const projects = [
-  { id: 1, title: "Skyline Tower", category: "Commercial", location: "Metropolis, NY", year: "2024", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" },
+  { id: 1, title: "Skyline Tower", category: "Commercial", location: "Metropolis, NY", year: "2024", image: "/images/architecture_2.png" },
   { id: 2, title: "Eco Residence", category: "Residential", location: "Austin, TX", year: "2023", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" },
   { id: 3, title: "City Mall", category: "Commercial", location: "Miami, FL", year: "2023", image: "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?q=80&w=800&auto=format&fit=crop" },
   { id: 4, title: "Metro Bridge", category: "Infrastructure", location: "Seattle, WA", year: "2022", image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=800&auto=format&fit=crop" },

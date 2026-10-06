@@ -23,7 +23,7 @@ const services = [
     icon: DraftingCompass, 
     short: "Innovative and sustainable architectural planning and design.",
     desc: "Our architectural division turns visions into buildable blueprints. We specialize in modern aesthetics fused with functional space planning, ensuring every structure is as beautiful as it is practical.",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop"
+    image: "/images/architecture_1.jpg"
   },
   { 
     id: "interior",

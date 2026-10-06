@@ -20,16 +20,16 @@ const stats = [
 ]
 
 const portfolio = [
-  { title: "Skyline Tower", category: "Commercial", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" },
+  { title: "Skyline Tower", category: "Commercial", image: "/images/architecture_2.png" },
   { title: "Eco Residence", category: "Residential", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" },
   { title: "City Mall", category: "Commercial", image: "https://images.unsplash.com/photo-1519999482648-25049ddd37b1?q=80&w=800&auto=format&fit=crop" },
   { title: "Metro Bridge", category: "Infrastructure", image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=800&auto=format&fit=crop" },
 ]
 
 const heroImages = [
-  "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop"
+  "/images/architecture_1.jpg",
+  "/images/architecture_2.png",
+  "/images/architecture_3.jpg"
 ]
 
 export default function Home() {
