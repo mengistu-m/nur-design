@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ArrowRight, DraftingCompass, HardHat, Home as HomeIcon, Zap, Droplets } from "lucide-react"
 import type { Metadata } from "next"
+import { ServiceCarousel } from "@/components/ServiceCarousel"
 
 export const metadata: Metadata = {
   title: "Our Services | Nur Design Built Construction Consultancy",
@@ -14,16 +15,22 @@ const services = [
     icon: HardHat, 
     short: "Foundations, structural works, and road developments built to last.",
     desc: "From initial site surveys to the final pour of concrete, our civil engineering team ensures the structural integrity of your project. We handle earthworks, deep foundations, high-rise structural frameworks, and municipal infrastructure.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1541888081622-15cb2a061414?q=80&w=800&auto=format&fit=crop"
+    ]
   },
-
   { 
     id: "architectural",
     title: "Architectural Design", 
     icon: DraftingCompass, 
     short: "Innovative and sustainable architectural planning and design.",
     desc: "Our architectural division turns visions into buildable blueprints. We specialize in modern aesthetics fused with functional space planning, ensuring every structure is as beautiful as it is practical.",
-    image: "/images/architecture_1.jpg"
+    images: [
+      "/images/custom_arch_1.png",
+      "/images/custom_arch_2.jpg",
+      "/images/custom_arch_3.jpg"
+    ]
   },
   { 
     id: "interior",
@@ -31,7 +38,10 @@ const services = [
     icon: HomeIcon, 
     short: "Functional and aesthetically pleasing interior spaces.",
     desc: "We don't just build shells; we create environments. Our interior design team selects materials, fixtures, and layouts that elevate the user experience, from luxury residential to corporate office spaces.",
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=800&auto=format&fit=crop"
+    ]
   },
 ]
 
@@ -53,9 +63,7 @@ export default function ServicesPage() {
             {services.map((service, index) => (
               <div key={service.id} id={service.id} className={`flex flex-col md:flex-row gap-12 items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
                 <div className="w-full md:w-1/2">
-                  <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg">
-                    <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
-                  </div>
+                  <ServiceCarousel images={service.images} title={service.title} />
                 </div>
                 <div className="w-full md:w-1/2 space-y-6">
                   <div className="inline-flex items-center justify-center p-3 bg-accent/10 rounded-lg text-accent mb-2">
