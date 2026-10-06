@@ -24,7 +24,7 @@ export function Navbar() {
             <div className="bg-primary p-2 rounded-lg group-hover:bg-accent transition-colors">
               <HardHat className="h-7 w-7 text-white" />
             </div>
-            <span className="text-2xl font-extrabold tracking-tight text-primary">Nur Design</span>
+            <span className="text-2xl font-extrabold tracking-tight text-primary">Nur Design Built</span>
           </Link>
         </div>
 

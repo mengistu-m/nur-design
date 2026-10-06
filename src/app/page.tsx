@@ -7,17 +7,15 @@ import { cn } from "@/lib/utils"
 
 const services = [
   { title: "Civil Works", icon: HardHat, desc: "Foundations, structural works, and road developments built to last." },
-  { title: "Sanitation & Plumbing", icon: Droplets, desc: "Modern drainage, water supply, and complete plumbing solutions." },
-  { title: "Electrical Installation", icon: Zap, desc: "Safe, efficient, and scalable electrical systems for any project." },
   { title: "Architectural Design", icon: DraftingCompass, desc: "Innovative and sustainable architectural planning and design." },
   { title: "Interior Design", icon: HomeIcon, desc: "Functional and aesthetically pleasing interior spaces." },
 ]
 
 const stats = [
-  { label: "Years Experience", value: "15+" },
-  { label: "Projects Completed", value: "300+" },
-  { label: "Clients Served", value: "150+" },
-  { label: "Industry Awards", value: "12" },
+  { label: "Years Experience", value: "10" },
+  { label: "Projects Completed", value: "180+" },
+  { label: "Clients Served", value: "160+" },
+  { label: "Industry Awards", value: "1" },
 ]
 
 const portfolio = [
@@ -54,7 +52,7 @@ export default function Home() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-300">With Precision</span>
             </h1>
             <p className="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
-              Nur Design is a multidisciplinary construction and engineering consultancy delivering architectural brilliance and structural excellence.
+              Nur Design Built is a multidisciplinary construction and engineering consultancy delivering architectural brilliance and structural excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link 
@@ -176,7 +174,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-white/80 italic leading-relaxed text-lg font-light">
-                  "Nur Design delivered exceptional quality on our latest commercial project. Their attention to detail and ability to stay within budget was truly impressive. Highly recommended."
+                  "Nur Design Built delivered exceptional quality on our latest commercial project. Their attention to detail and ability to stay within budget was truly impressive. Highly recommended."
                 </p>
               </div>
             ))}

@@ -4,8 +4,8 @@ import { CheckCircle2, Award, Users, Target } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About Us | Nur Design Construction Consultancy",
-  description: "Learn more about Nur Design, our mission, vision, values, and leadership team.",
+  title: "About Us | Nur Design Built Construction Consultancy",
+  description: "Learn more about Nur Design Built, our mission, vision, values, and leadership team.",
 }
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
       {/* Page Header */}
       <section className="bg-muted py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">About Nur Design</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">About Nur Design Built</h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Building a legacy of excellence through engineering precision and sustainable practices.
           </p>
@@ -28,7 +28,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-foreground">Our Story</h2>
               <p className="text-muted-foreground mb-4">
-                Founded over 15 years ago, Nur Design began with a simple mission: to raise the standard of construction and engineering consultancy. What started as a small team of civil engineers has grown into a multidisciplinary firm handling everything from complex infrastructure to bespoke interior designs.
+                Founded over 15 years ago, Nur Design Built began with a simple mission: to raise the standard of construction and engineering consultancy. What started as a small team of civil engineers has grown into a multidisciplinary firm handling everything from complex infrastructure to bespoke interior designs.
               </p>
               <p className="text-muted-foreground mb-8">
                 We believe that every project, regardless of scale, deserves rigorous attention to detail, uncompromising safety standards, and innovative problem-solving.

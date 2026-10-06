@@ -4,7 +4,7 @@ export default function PrivacyPage() {
       <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
       <p className="text-muted-foreground mb-4">Last updated: {new Date().toLocaleDateString()}</p>
       <div className="prose max-w-none text-muted-foreground">
-        <p>This is a placeholder privacy policy for Nur Design Construction Consultancy.</p>
+        <p>This is a placeholder privacy policy for Nur Design Built Construction Consultancy.</p>
         <p>We respect your privacy and are committed to protecting your personal data.</p>
       </div>
     </div>

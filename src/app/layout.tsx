@@ -16,7 +16,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Nur Design Construction Consultancy",
+  title: "Nur Design Built Construction Consultancy",
   description: "Multidisciplinary construction consultancy offering top-tier civil works, engineering, and architectural services.",
 };
 

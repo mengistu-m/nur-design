@@ -45,7 +45,7 @@ export default async function PortfolioDetailPage({ params }: { params: Promise<
             <div className="lg:col-span-2">
               <h2 className="text-3xl font-bold text-foreground mb-6">Project Overview</h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                {project.desc} This project showcases Nur Design's commitment to delivering top-tier engineering and construction services. From initial planning to final execution, our team ensured every detail was meticulously crafted to meet the highest standards of safety, aesthetics, and functionality.
+                {project.desc} This project showcases Nur Design Built's commitment to delivering top-tier engineering and construction services. From initial planning to final execution, our team ensured every detail was meticulously crafted to meet the highest standards of safety, aesthetics, and functionality.
               </p>
               
               <h3 className="text-2xl font-bold text-foreground mb-4">Key Achievements</h3>

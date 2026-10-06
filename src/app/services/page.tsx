@@ -3,7 +3,7 @@ import { ArrowRight, DraftingCompass, HardHat, Home as HomeIcon, Zap, Droplets }
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Our Services | Nur Design Construction Consultancy",
+  title: "Our Services | Nur Design Built Construction Consultancy",
   description: "Explore our comprehensive engineering, architectural, and construction consultancy services.",
 }
 
@@ -16,22 +16,7 @@ const services = [
     desc: "From initial site surveys to the final pour of concrete, our civil engineering team ensures the structural integrity of your project. We handle earthworks, deep foundations, high-rise structural frameworks, and municipal infrastructure.",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop"
   },
-  { 
-    id: "sanitation",
-    title: "Sanitation & Plumbing", 
-    icon: Droplets, 
-    short: "Modern drainage, water supply, and complete plumbing solutions.",
-    desc: "We design and implement highly efficient plumbing and sanitation systems. Whether it's a multi-story commercial building or an industrial complex, we ensure safe water delivery and environmentally compliant waste management.",
-    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop"
-  },
-  { 
-    id: "electrical",
-    title: "Electrical Installation", 
-    icon: Zap, 
-    short: "Safe, efficient, and scalable electrical systems for any project.",
-    desc: "Our electrical engineers design power distribution grids, lighting layouts, and integrated low-voltage systems. We prioritize energy efficiency, safety compliance, and future-proof scalability for smart building integration.",
-    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop"
-  },
+
   { 
     id: "architectural",
     title: "Architectural Design", 

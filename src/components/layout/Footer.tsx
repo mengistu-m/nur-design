@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
               <HardHat className="h-8 w-8 text-accent" />
-              <span className="text-xl font-bold tracking-tight">Nur Design</span>
+              <span className="text-xl font-bold tracking-tight">Nur Design Built</span>
             </Link>
             <p className="mb-4 text-sm text-primary-foreground/80">
               Multidisciplinary construction consultancy offering top-tier civil works, engineering, and architectural services.
@@ -48,8 +48,6 @@ export function Footer() {
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-accent">Our Services</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
               <li><Link href="/services#civil" className="hover:text-white transition-colors">Civil Works</Link></li>
-              <li><Link href="/services#sanitation" className="hover:text-white transition-colors">Sanitation & Plumbing</Link></li>
-              <li><Link href="/services#electrical" className="hover:text-white transition-colors">Electrical Installation</Link></li>
               <li><Link href="/services#architectural" className="hover:text-white transition-colors">Architectural Design</Link></li>
               <li><Link href="/services#interior" className="hover:text-white transition-colors">Interior Design</Link></li>
             </ul>
@@ -61,15 +59,19 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 flex-shrink-0 text-accent" />
-                <span>123 Engineering Blvd, Suite 400<br />Metropolis, NY 10001</span>
+                <span>Head Office<br />megenaga, lemhotel</span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-accent" />
-                <span>+1 (555) 123-4567</span>
+                <span className="flex flex-col">
+                  <span>+251913980181 (WhatsApp)</span>
+                  <span>+251923137707</span>
+                  <span>+251923782471</span>
+                </span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-accent" />
-                <span>info@Nur Design.com</span>
+                <span>archsadu@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -77,7 +79,7 @@ export function Footer() {
         
         <div className="mt-12 border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-primary-foreground/60">
-            &copy; {new Date().getFullYear()} Nur Design Construction Consultancy. All rights reserved.
+            &copy; {new Date().getFullYear()} Nur Design Built Construction Consultancy. All rights reserved.
           </p>
           <div className="flex gap-4 text-sm text-primary-foreground/60">
             <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>

@@ -37,7 +37,7 @@ export default function QuotePage() {
                     <Send className="h-8 w-8 text-green-600" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Request Received!</h3>
-                  <p>Thank you for reaching out. A Nur Design representative will contact you shortly.</p>
+                  <p>Thank you for reaching out. A Nur Design Built representative will contact you shortly.</p>
                   <button 
                     onClick={() => setSubmitted(false)}
                     className="mt-6 inline-flex text-primary font-medium hover:underline"
@@ -74,8 +74,6 @@ export default function QuotePage() {
                     <select required id="service" className="w-full p-3 rounded-md border border-border bg-background focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all">
                       <option value="">Select a service...</option>
                       <option value="civil">Civil Works & Construction</option>
-                      <option value="sanitation">Sanitation & Plumbing</option>
-                      <option value="electrical">Electrical Installation</option>
                       <option value="architectural">Architectural Design</option>
                       <option value="interior">Interior Design</option>
                       <option value="multiple">Multiple Services / General Contracting</option>
@@ -103,21 +101,21 @@ export default function QuotePage() {
                     <MapPin className="h-6 w-6 text-accent mr-4 flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-foreground">Head Office</h4>
-                      <p className="text-muted-foreground mt-1">123 Engineering Blvd, Suite 400<br/>Metropolis, NY 10001</p>
+                      <p className="text-muted-foreground mt-1">megenaga, lemhotel</p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <Phone className="h-6 w-6 text-accent mr-4 flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-foreground">Phone</h4>
-                      <p className="text-muted-foreground mt-1">+1 (555) 123-4567<br/>+1 (555) 987-6543</p>
+                      <p className="text-muted-foreground mt-1">+251913980181<br/>+251923137707<br/>+251923782471</p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <Mail className="h-6 w-6 text-accent mr-4 flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-foreground">Email</h4>
-                      <p className="text-muted-foreground mt-1">info@Nur Design.com<br/>tenders@Nur Design.com</p>
+                      <p className="text-muted-foreground mt-1">archsadu@gmail.com</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -133,7 +131,7 @@ export default function QuotePage() {
               <div className="bg-primary text-white p-8 rounded-xl text-center">
                 <h3 className="text-xl font-bold mb-3">Urgent Requirement?</h3>
                 <p className="text-white/80 mb-6 text-sm">Our support team is available via WhatsApp for immediate assistance.</p>
-                <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center rounded-md bg-[#25D366] px-4 py-3 text-sm font-bold text-white shadow hover:bg-[#25D366]/90 transition-colors">
+                <a href="https://wa.me/251913980181" target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center rounded-md bg-[#25D366] px-4 py-3 text-sm font-bold text-white shadow hover:bg-[#25D366]/90 transition-colors">
                   Chat on WhatsApp
                 </a>
               </div>
