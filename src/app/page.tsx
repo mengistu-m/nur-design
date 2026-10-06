@@ -28,47 +28,68 @@ const portfolio = [
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+      {/* Architectural Hero Section */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <motion.div 
+          className="absolute inset-0 z-0"
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
           <img 
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2000&auto=format&fit=crop" 
-            alt="Construction Site" 
-            className="w-full h-full object-cover brightness-[0.25]"
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop" 
+            alt="Modern Architecture" 
+            className="w-full h-full object-cover brightness-[0.4]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
-        </div>
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/50 via-transparent to-primary/80" />
+        </motion.div>
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white flex flex-col items-center">
           <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+            className="mb-6"
+          >
+            <span className="inline-block py-1.5 px-4 rounded-none border border-accent text-accent font-medium text-xs tracking-[0.3em] uppercase">
+              Visionary Architecture
+            </span>
+          </motion.div>
+          <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+            className="text-6xl md:text-8xl lg:text-9xl font-light tracking-tighter mb-6 leading-none"
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-accent/20 border border-accent/40 text-accent font-medium text-sm mb-6 uppercase tracking-widest">
-              Premium Engineering Solutions
-            </span>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-6 leading-tight">
-              Building the Future <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-yellow-300">With Precision</span>
-            </h1>
-            <p className="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
-              Nur Design Built is a multidisciplinary construction and engineering consultancy delivering architectural brilliance and structural excellence.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link 
-                href="/quote" 
-                className="group relative inline-flex h-14 items-center justify-center rounded-lg bg-accent px-8 py-3 text-base font-bold text-white shadow-xl shadow-accent/20 transition-all hover:bg-accent/90 hover:scale-105"
-              >
-                Get a Free Quote
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Link>
-              <Link 
-                href="/portfolio" 
-                className="inline-flex h-14 items-center justify-center rounded-lg bg-white/5 backdrop-blur-md border border-white/10 px-8 py-3 text-base font-medium text-white shadow-lg transition-all hover:bg-white/10 hover:border-white/20"
-              >
-                View Our Work
-              </Link>
-            </div>
+            Design.<br/>
+            <span className="font-bold text-accent">Built.</span>
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-12 font-light tracking-wide leading-relaxed"
+          >
+            Nur Design Built creates spaces that inspire, function, and endure. From concept to concrete, we sculpt the skyline.
+          </motion.p>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          >
+            <Link 
+              href="/quote" 
+              className="group relative inline-flex h-14 items-center justify-center bg-accent px-10 text-sm font-bold text-white tracking-widest uppercase transition-all hover:bg-white hover:text-primary"
+            >
+              Start a Project
+              <ArrowRight className="ml-3 h-4 w-4 transition-transform group-hover:translate-x-2" />
+            </Link>
+            <Link 
+              href="/portfolio" 
+              className="group inline-flex h-14 items-center justify-center border border-white/30 px-10 text-sm font-bold text-white tracking-widest uppercase transition-all hover:border-white hover:bg-white/10"
+            >
+              Our Work
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -93,23 +114,36 @@ export default function Home() {
           <DraftingCompass className="h-[500px] w-[500px] text-primary" />
         </div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-20">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">Our Core Services</h2>
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="text-center max-w-3xl mx-auto mb-20"
+          >
+            <h2 className="text-4xl md:text-5xl font-light text-primary mb-6 tracking-tight">Our Core Services</h2>
             <p className="text-lg md:text-xl text-muted-foreground font-light">Comprehensive engineering and design solutions tailored to your project's unique requirements.</p>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-border/50 card-hover group relative overflow-hidden">
+              <motion.div 
+                key={i} 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+                className="bg-white rounded-none p-10 shadow-sm border border-border/50 card-hover group relative overflow-hidden"
+              >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent/10 to-transparent rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110" />
-                <div className="h-16 w-16 rounded-xl bg-primary flex items-center justify-center mb-8 shadow-lg shadow-primary/20 relative z-10 text-white group-hover:bg-accent transition-colors">
-                  <service.icon className="h-8 w-8" />
+                <div className="h-16 w-16 bg-primary flex items-center justify-center mb-8 relative z-10 text-white group-hover:bg-accent transition-colors duration-500">
+                  <service.icon className="h-6 w-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-4 relative z-10">{service.title}</h3>
-                <p className="text-muted-foreground mb-8 line-clamp-3 relative z-10">{service.desc}</p>
-                <Link href="/services" className="inline-flex items-center text-sm font-bold text-primary hover:text-accent transition-colors group/link relative z-10 uppercase tracking-wider">
-                  Learn more <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
+                <h3 className="text-xl font-light text-foreground mb-4 relative z-10 uppercase tracking-wide">{service.title}</h3>
+                <p className="text-muted-foreground mb-8 line-clamp-3 relative z-10 font-light">{service.desc}</p>
+                <Link href="/services" className="inline-flex items-center text-xs font-bold text-primary hover:text-accent transition-colors group/link relative z-10 uppercase tracking-widest">
+                  Discover <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/link:translate-x-2" />
                 </Link>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -183,18 +217,21 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-32 bg-accent relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888081622-15cb2a061414?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-20" />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight drop-shadow-md">Ready to Start Your Next Project?</h2>
-          <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-12 font-medium drop-shadow-sm">
+      <section className="py-32 bg-primary relative overflow-hidden">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-10 grayscale" />
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center flex flex-col items-center">
+          <span className="inline-block py-1 px-4 border border-accent text-accent font-medium text-xs tracking-[0.2em] uppercase mb-6">
+            Let's Build
+          </span>
+          <h2 className="text-4xl md:text-6xl font-light text-white mb-6 tracking-tight">Ready to Start Your Next Project?</h2>
+          <p className="text-xl text-white/60 max-w-2xl mx-auto mb-12 font-light tracking-wide leading-relaxed">
             Contact us today for a free consultation. Our team of experts is ready to bring your vision to life.
           </p>
           <Link 
             href="/quote" 
-            className="inline-flex h-16 items-center justify-center rounded-lg bg-white px-12 py-4 text-xl font-bold text-primary shadow-2xl transition-transform hover:scale-105 hover:shadow-white/20"
+            className="group relative inline-flex h-16 items-center justify-center bg-white px-12 py-4 text-sm font-bold text-primary tracking-widest uppercase transition-all hover:bg-accent hover:text-white"
           >
-            Request a Free Quote <ArrowRight className="ml-3 h-6 w-6 text-accent" />
+            Request a Free Quote <ArrowRight className="ml-4 h-5 w-5 transition-transform group-hover:translate-x-2" />
           </Link>
         </div>
       </section>
